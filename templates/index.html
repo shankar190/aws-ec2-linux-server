@@ -1,22 +1,143 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>AWS EC2 Python Server</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWS EC2 | Cloud Server Project</title>
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
+    <nav class="navbar">
+        <a href="#" class="brand"><span class="brand-icon">☁</span> Cloud<span>Server</span></a>
+        <div class="nav-links">
+            <a href="#overview">Overview</a>
+            <a href="#architecture">Architecture</a>
+            <a href="#technologies">Technologies</a>
+            <a href="https://github.com/shankar190/aws-ec2-linux-server"
+               target="_blank" rel="noopener">GitHub ↗</a>
+        </div>
+    </nav>
 
-    <h1>Welcome to My AWS Server</h1>
+    <main>
+        <section class="hero" id="overview">
+            <div class="hero-content">
+                <div class="eyebrow"><span class="status-dot"></span> CLOUD DEPLOYMENT PROJECT</div>
+                <h1>My Own Server.<br><span>Powered by AWS.</span></h1>
+                <p class="hero-description">
+                    A Python Flask web application deployed on an Ubuntu Linux
+                    server using Amazon EC2, Gunicorn and Nginx.
+                </p>
+                <div class="hero-buttons">
+                    <a class="btn primary" href="#architecture">Explore Architecture →</a>
+                    <a class="btn secondary"
+                       href="https://github.com/shankar190/aws-ec2-linux-server"
+                       target="_blank" rel="noopener">View Source Code ↗</a>
+                </div>
+                <div class="hero-note">Built to learn cloud computing and Linux server deployment.</div>
+            </div>
+            <div class="server-visual">
+                <div class="orbit orbit-one"></div>
+                <div class="orbit orbit-two"></div>
+                <div class="server-icon">☁</div>
+                <div class="floating-card card-top">AWS EC2 <span>Cloud Server</span></div>
+                <div class="floating-card card-bottom">● Ubuntu Linux <span>Server OS</span></div>
+            </div>
+        </section>
 
-    <h2>Python Flask Web Application</h2>
+        <section class="section" id="technologies">
+            <div class="section-heading">
+                <div>
+                    <div class="eyebrow">THE TECHNOLOGY STACK</div>
+                    <h2>Built with the right tools.</h2>
+                </div>
+                <p>Tools used to build and deploy this project.</p>
+            </div>
 
-    <p>
-        This application is deployed on an AWS EC2 Linux server.
-    </p>
+            <div class="tech-grid">
+                <article class="tech-card">
+                    <div class="tech-icon orange">☁</div>
+                    <h3>Amazon EC2</h3>
+                    <p>Cloud computing instance that hosts the application.</p>
+                    <span class="tag">Cloud Hosting</span>
+                </article>
+                <article class="tech-card">
+                    <div class="tech-icon purple">▣</div>
+                    <h3>Ubuntu Linux</h3>
+                    <p>Linux operating system for server management.</p>
+                    <span class="tag">Operating System</span>
+                </article>
+                <article class="tech-card">
+                    <div class="tech-icon green">Py</div>
+                    <h3>Python Flask</h3>
+                    <p>Lightweight web framework powering the application.</p>
+                    <span class="tag">Backend</span>
+                </article>
+                <article class="tech-card">
+                    <div class="tech-icon blue">↗</div>
+                    <h3>Gunicorn + Nginx</h3>
+                    <p>Application serving and web traffic handling.</p>
+                    <span class="tag">Deployment</span>
+                </article>
+            </div>
+        </section>
 
-    <p>
-        Technologies: Python, Flask, HTML, GitHub, AWS EC2 and Nginx.
-    </p>
+        <section class="section architecture" id="architecture">
+            <div class="section-heading">
+                <div>
+                    <div class="eyebrow">HOW IT WORKS</div>
+                    <h2>Application architecture.</h2>
+                </div>
+                <p>Follow the request from browser to backend.</p>
+            </div>
 
+            <div class="architecture-flow">
+                <div class="flow-card">
+                    <div class="flow-icon">◎</div>
+                    <h3>User Browser</h3>
+                    <p>Sends HTTP requests</p>
+                </div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-card">
+                    <div class="flow-icon">N</div>
+                    <h3>Nginx</h3>
+                    <p>Web server / proxy</p>
+                </div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-card">
+                    <div class="flow-icon">G</div>
+                    <h3>Gunicorn</h3>
+                    <p>Runs Flask application</p>
+                </div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-card">
+                    <div class="flow-icon">Py</div>
+                    <h3>Flask</h3>
+                    <p>Processes requests</p>
+                </div>
+            </div>
+            <p class="architecture-note">
+                The application runs on Ubuntu Linux hosted by an Amazon EC2 instance.
+            </p>
+        </section>
+
+        <section class="cta">
+            <div>
+                <div class="eyebrow">EXPLORE THE PROJECT</div>
+                <h2>Simple project. Real cloud skills.</h2>
+                <p>Explore the source code, application files and deployment setup.</p>
+            </div>
+            <a class="btn primary"
+               href="https://github.com/shankar190/aws-ec2-linux-server"
+               target="_blank" rel="noopener">Open GitHub Repository ↗</a>
+        </section>
+    </main>
+
+    <footer>
+        <a href="#" class="brand">☁ Cloud<span>Server</span></a>
+        <p>Built with Python Flask · Deployed on AWS EC2</p>
+        <p class="footer-small">Educational cloud computing project</p>
+    </footer>
 </body>
 </html>
